@@ -1,0 +1,9 @@
+{
+  "event_id": "sample-001",
+  "event_type": "APPLICATION_FILED",
+  "aggregate_type": "event_application",
+  "aggregate_id": "aggregate-001",
+  "occurred_at": "2026-09-20T12:00:00+08:00",
+  "version": 1,
+  "summary": "城市赛事承办审议领域样例"
+}
