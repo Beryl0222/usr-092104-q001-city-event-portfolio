@@ -20,10 +20,21 @@
       "type": "string",
       "enum": [
         "APPLICATION_FILED",
+        "APPLICATION_WITHDRAWN",
+        "SUPPLEMENT_REQUESTED",
+        "SUPPLEMENT_PROVIDED",
         "RESOURCE_CONFLICTED",
+        "RESOURCE_CONFLICT_RESOLVED",
+        "RESOURCE_RESERVED",
+        "RESOURCE_RELEASED",
+        "RECUSAL_DECLARED",
         "OPINION_SIGNED",
         "DECISION_ISSUED",
-        "CHANGE_REOPENED"
+        "CONDITION_FULFILLED",
+        "CHANGE_REQUESTED",
+        "CHANGE_REOPENED",
+        "PUBLIC_SERVICE_COMMITTED",
+        "PUBLIC_SERVICE_REVOKED"
       ]
     },
     "aggregate_type": {
@@ -32,7 +43,8 @@
         "event_application",
         "resource_commitment",
         "review_opinion",
-        "portfolio_decision"
+        "portfolio_decision",
+        "public_service_commitment"
       ]
     },
     "aggregate_id": {
@@ -50,6 +62,14 @@
     "summary": {
       "type": "string",
       "minLength": 1
+    },
+    "correlation_id": {
+      "type": "string",
+      "description": "串联同一赛事全部过程事件的关联 id，通常为申办 id，供审计回放使用。"
+    },
+    "payload": {
+      "type": "object",
+      "description": "业务内容，按事件类型各自定义。"
     }
   },
   "additionalProperties": true

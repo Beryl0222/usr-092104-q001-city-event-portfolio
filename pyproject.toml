@@ -1,5 +1,5 @@
 [project]
 name = "domain-event-contract"
 version = "0.1.0"
-description = "领域事件基础校验"
+description = "城市赛事承办审议：领域事件契约与承办审议后端"
 requires-python = ">=3.11"
