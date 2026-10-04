@@ -20,10 +20,28 @@
       "type": "string",
       "enum": [
         "APPLICATION_FILED",
+        "APPLICATION_AMENDED",
+        "APPLICATION_WITHDRAWN",
+        "SUPPLEMENT_REQUESTED",
+        "ADMISSIBILITY_EVIDENCE_SUBMITTED",
+        "BENEFIT_FORECAST_ATTACHED",
+        "RESOURCE_DECLARED",
+        "RESOURCE_REVISED",
         "RESOURCE_CONFLICTED",
+        "CONFLICT_CHECK_RUN",
+        "RESOURCE_CONFLICT_RESOLVED",
+        "PUBLIC_SERVICE_COMMITTED",
+        "PUBLIC_SERVICE_PROTECTED",
+        "RECUSAL_DECLARED",
         "OPINION_SIGNED",
+        "DISSENT_RECORDED",
+        "REVIEW_RESOLVED",
+        "CONDITION_SET",
+        "CONDITION_SATISFIED",
         "DECISION_ISSUED",
-        "CHANGE_REOPENED"
+        "CHANGE_DECLARED",
+        "CHANGE_REOPENED",
+        "CHANGE_CLOSED"
       ]
     },
     "aggregate_type": {
